@@ -1,0 +1,17 @@
+<h3>Get the amino acid sequence</h3>
+<form action="/input">
+  <div class="form-group">
+    <label for="sequence"></label>
+    <textarea id="sequence" type="text" name="sequence" class="form-control" rows="5" placeholder="Paste your sequence here"></textarea>
+  </div>
+
+  <select class="form-control" name="option" id="option">
+    <option value="1">Amino Acid Code</option>
+    <option value="2">Amino Acid Name</option>
+  </select>
+
+  <br>
+  <button type="submit" class="btn btn-primary btn-lg">Go</button>
+</form>
+
+<h3>The amino acid sequence is: <%= @result %> </h3>
